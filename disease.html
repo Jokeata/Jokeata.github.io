@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style-type: none;
+		}
+		.clear{
+			clear: both;
+		}
+		#page{
+			width: 1700px;
+			margin: auto;
+			border: 0px solid #bbbbbb;
+		}
+		header{
+			width: 1700px;
+			height: 130px;
+			border: 0px solid #bbbbbb;
+			position: fixed;
+			background-color: white;
+			border-bottom: 1px solid #eeeeee; 
+		}
+		nav{
+			
+		}
+		section{
+			float: right;
+			margin-top: 210px;
+			margin-right: 150px;
+			border: 0px solid #bbbbbb;
+			padding-bottom: 20px;
+			width: 1200px;
+		}
+		aside{
+			float: left;
+			margin-top: 215px;
+			margin-left: 80px;
+			border: 0px solid #bbbbbb;
+			width: 220px;
+		}
+		aside h2{
+			border-bottom: 1px solid #bbbbbb;
+			padding: 20px 10px;
+		}
+		aside li{
+			text-align: left;
+			padding: 15px 10px;
+			border-bottom: 1px solid #bbbbbb;
+		}
+		#logo{
+			float: left;
+			margin: 20px 0 0 20px;
+		}
+		#top{
+			float: right;
+			margin: 30px 20px 0 0;
+		}
+		#title {
+			font-weight: bold;
+			margin-bottom: 10px;
+			padding: 20px 0;
+			border-bottom: 2px solid black;
+			text-align: left;
+			font-size: 30px;
+		}
+		#s1{
+			border-bottom: 1px solid #bbbbbb;
+			padding-bottom: 10px;
+			padding-left: 10px; 
+		}
+		#s1 li{
+			display: inline-block;
+			padding-right: 15px;
+		}
+		#s2{
+			text-align: right;
+			margin-left: 185px;
+		}
+		#gray{
+			color: gray;
+		}
+		#s3{
+			margin-top: 50px;
+		}
+		#s4{
+			margin-left: 35px;
+		}
+		#s4 ul li{
+			list-style-type: circle;
+			font-size: 25px;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+		#s4 ul li p{
+			font-size: 15px;
+			font-weight: normal;
+		}
+		#s4 ul li ul li{
+			font-size: 15px;
+			font-weight: normal;
+			list-style-type: disc;
+			padding-bottom: 5px;
+		}
+		footer{
+			width: 1650px;
+			height: 80px;
+			margin-top: 10px;
+			margin-left: 40px;
+			border: 0px solid #bbbbbb;
+			background-color: #f5f6fa;
+		}
+		#F1{
+			float: left;
+			margin: 10px 0 0 0px;
+		}
+		#F2{
+			float: right;
+			margin: 10px 0 0 0px;
+		}
+		#topMenu {
+            height: 70px;  
+            width: 1700px;  
+            position: fixed;
+            background-color: white; 
+            margin-top: 130px; 
+            margin-left: 20px;
+            padding-top: 20px;
+    	}
+	    #topMenu ul li {            
+	        /*color: white; */              
+	        background-color: white;  
+	        float: left;                
+	        -line-height: 30px;          
+	        vertical-align: middle;     
+	        -text-align: center;         
+	             
+	    }
+	    .menuLink, .submenuLink {           
+	        text-decoration:none;               
+	        display: block;
+	    }
+	    .menuLink {  
+	        /*color: white; */
+	        height: 27px;
+	        width: auto;
+	        margin-left: 56px;
+	    }
+	    .topMenuLi:hover .menuLink {    
+	        /*color: red; */                
+	        border-bottom: 5px solid green;
+	        padding-bottom: 30px;  
+	    }
+	    .longLink {  
+	        width: 190px;   
+	    }
+	    .submenuLink {         
+	    	/*color: #2d2d2d;   */          
+	        background-color: white;    
+	        font-size: 22px;
+	        margin-left: 15px;
+	        padding-left: 3px;
+	        -padding-right: 90px; 
+	        border-right: 2px solid #eee; 
+	        height: 100px; 
+	        width: 240px;  
+	        text-align: left;
+	    }
+	    .submenu {              
+	        position: absolute;     
+	        height: 0px;            
+	        overflow: hidden;       
+	        transition: height .2s;
+	        width: 1700px; 
+	        left: 0;
+	        background-color: white;  
+	        padding-top: 40px; 
+	        padding-left: 40px;
+
+	    }
+	    .submenu li {
+	        display: inline-block;  
+	    }
+	    .topMenuLi:hover .submenu { 
+	        height: 130px;           
+	    }
+	    .submenuLink:hover {        
+	        /*color: red;                 
+	        background-color: #dddddd; */ 
+	    }
+	</style>
+</head>
+<body id="page">
+	<header>
+		<div id="logo">
+			<img src="./img/logo.png">
+		</div>
+		<div id="top">
+			로그인 | 회원가입 | <a href="intro.html">마이페이지</a> | 고객센터
+		</div>
+	</header>
+	<div class="clear"></div>
+	<nav id="topMenu">
+		<ul>
+			<li class="topMenuLi"><a href="disease.html"><img class="menuLink" src="./img/N1.PNG"></a>
+				<ul class="submenu">
+					<li class="submenuLink">감염병정보</li>
+					<li class="submenuLink">해외감염정보
+						<!--<ul>
+							<li>해외감염병NOW</li>
+							<li>예방접종정보</li>
+							<li>해외여행건강정보</li>
+							<li>검역관리</li>
+						</ul>-->
+					</li>
+					<li class="submenuLink">감염병유행정보</li>
+					<li class="submenuLink">결핵</li>
+					<li class="submenuLink">예방접종</li>
+					<li class="submenuLink">감염병간행물</li>
+				</ul>
+			</li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N2.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N3.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N4.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N5.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N6.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N7.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N8.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N9.PNG"></li>
+		</ul>
+	</nav>
+	<div class="clear"></div>
+	<aside>
+		<ul><h2>감염병</h2>
+			<li>감염병정보</li>
+			<li>해외감염정보</li>
+			<li>감염병유행정보</li>
+			<li>결핵</li>
+			<li>예방접종</li>
+			<li>감염병간행물</li>
+		</ul>
+	</aside>
+	
+	<section>
+		<div id="title">
+			감염병정보
+		</div>
+		<div id="s1">
+			<ul>
+				<li><span id="gray">작성일</span> 2019-05-15</li>
+				<li><span id="gray">최종수정일</span> 2020-06-12</li>
+				<li><span id="gray">담당부서</span> 의료감염관리과</li>
+				<li><span id="gray">연락처</span> 043-719-7124</li>
+				<span id="s2"><span id="gray">조회수</span> 2,934,135 </span>
+			</ul>	
+		</div>
+		<div id="s3">
+			<img src="./img/D1.png" width="900">
+		</div>
+		<div id="s4">
+			<ul>
+				<li>감염병포털 소개<br><p>법정감염병(전수/표본)의 현황(통계) 및 올바른 정보를 국민들이 쉽게 접근할 수 있는 감염병 정보 포털사이트</p>
+				</li>
+				<li>통계<br>
+					<ul>
+						<li>전수감시 감염병 : 전수감시 감염병에 대한 주요통계, 질병별 통계, 지역별 통계, 성별/연령별 통계에 대한 통계</li>
+						<li>표본감시 감염병 : 표본감시 감염병에 대한 통계</li>
+						<li>비브리오 감시 : 해수엣 측정한 비브리오 통계</li>
+					</ul>
+				</li>
+				<li>지침<br>
+					<ul>
+						<li>법정감염병의 증상, 진단 및 치료, 신고기준, 예방과 같은 정보</li>
+						<li>감염병 관리, 각 기관에서 해야하는 수행체계, 감시체계, 실험실 검사, 역학조사, 환자관리/접촉자 관리, 방역관리에 대한 정보</li>
+					</ul>
+				</li>
+				<li>발간자료<br>
+					<ul>
+						<li>감시연보 : 감염병 신고·보고된 법정감염병 현황을 분석 정리한 자료</li>
+						<li>역학조사연보 : 시·군·구 역학조사반의 신고 접수된 수인성·식품매개 감염병 집단발생에 분석 정리한 자료</li>
+						<li>주간소식지 : 표본감시 감염병 주간 정보</li>
+						<li>실험실 소식지 정보 : 병원체 및 매개체 주간 감시 정보</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<div class="clear"></div>
+	<footer>
+		<div id="F1">
+			<img src="./img/F1.png" width="500">
+		</div>
+		<div id="F2">
+			<img src="./img/F2.png" width="600">
+		</div>
+	</footer>
+</body>
+</html>

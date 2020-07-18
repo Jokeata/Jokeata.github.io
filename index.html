@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style-type: none;
+		}
+		.clear{
+			clear: both;
+		}
+		#page{
+			width: 1700px;
+			margin: auto;
+			border: 0px solid #bbbbbb;
+		}
+		header{
+			width: 1700px;
+			height: 130px;
+			border: 0px solid #bbbbbb;
+			position: fixed;
+			background-color: white;
+			border-bottom: 1px solid #eeeeee; 
+		}
+		nav{
+			
+		}
+		section{
+			margin-top: 10px;
+			margin-left: 40px;
+			float: left;
+			border: 0px solid #bbbbbb;
+			padding-bottom: 20px;
+		}
+		aside{
+			position: fixed;
+			margin-top: 300px;
+			margin-left: 1750px;
+			border: 0px solid #bbbbbb;
+			padding: 40px;
+		}
+		aside li{
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		aside img:hover{
+			transform: scale(1.1);
+		}
+		#sub1{
+
+		}
+		#sub1 li{
+			display: inline-block;
+			text-align: center;
+			padding-right: 20px;
+			font-size: 19px;
+		}
+		#sub1 img{
+			width: 390px;
+			height: auto;
+		}
+		#sub1 img:hover{
+			box-shadow: 5px 5px 10px gray;
+			transform: translate(5px, -5px);
+		}
+		#sub2{
+
+		}
+		#sub2 li img{
+			width: 100px;
+			height: 100px;
+		}
+		#sub2 li{
+			display: inline-block;
+			margin: 0 35px;
+			padding-bottom: 60px;
+			text-align: center; 
+			font-size: 17px;
+			width: 150px;
+		}
+		#sub2 li img:hover{
+			transform: scale(1.1);
+		}
+		#sub3{
+
+		}
+		#sub3 li{
+			display: inline-block;
+			padding-right: 18px;
+			overflow: hidden;
+		}
+		#sub3 img{
+			width: 390px;
+			height: 300px;
+			display: block;
+		}
+		#sub3 img:hover{
+			transform: scale(1.1);
+			transition: transform 1s;
+		}
+		footer{
+			width: 1650px;
+			height: 80px;
+			margin-top: 10px;
+			margin-left: 40px;
+			border: 0px solid #bbbbbb;
+			background-color: #f5f6fa;
+		}
+		#F1{
+			float: left;
+			margin: 10px 0 0 0px;
+		}
+		#F2{
+			float: right;
+			margin: 10px 0 0 0px;
+		}
+		#logo{
+			float: left;
+			margin: 20px 0 0 20px;
+		}
+		#top{
+			float: right;
+			margin: 30px 20px 0 0;
+		}
+		#main{
+			margin-top: 220px;
+		}
+		#topMenu {
+            height: 70px;  
+            width: 1700px;  
+            position: fixed;
+            background-color: white; 
+            margin-top: 130px; 
+            margin-left: 20px;
+            padding-top: 20px;
+    	}
+	    #topMenu ul li {            
+	        /*color: white; */              
+	        background-color: white;  
+	        float: left;                
+	        -line-height: 30px;          
+	        vertical-align: middle;     
+	        -text-align: center;         
+	             
+	    }
+	    .menuLink, .submenuLink {           
+	        text-decoration:none;               
+	        display: block;
+	    }
+	    .menuLink {  
+	        /*color: white; */
+	        height: 27px;
+	        width: auto;
+	        margin-left: 56px;
+	    }
+	    .topMenuLi:hover .menuLink {    
+	        /*color: red; */                
+	        border-bottom: 5px solid green;
+	        padding-bottom: 30px;  
+	    }
+	    .longLink {  
+	        width: 190px;   
+	    }
+	    .submenuLink {         
+	    	/*color: #2d2d2d;   */          
+	        background-color: white;    
+	        font-size: 22px;
+	        margin-left: 15px;
+	        padding-left: 3px;
+	        -padding-right: 90px; 
+	        border-right: 2px solid #eee; 
+	        height: 100px; 
+	        width: 240px;  
+	        text-align: left;
+	    }
+	    .submenu {              
+	        position: absolute;     
+	        height: 0px;            
+	        overflow: hidden;       
+	        transition: height .2s;
+	        width: 1700px; 
+	        left: 0;
+	        background-color: white;  
+	        padding-top: 40px; 
+	        padding-left: 40px;
+
+	    }
+	    .submenu li {
+	        display: inline-block;  
+	    }
+	    .topMenuLi:hover .submenu { 
+	        height: 130px;           
+	    }
+	    .submenuLink:hover {        
+	        /*color: red;                 
+	        background-color: #dddddd; */ 
+	    }
+	</style>
+</head>
+<body id="page">
+	<header>
+		<div id="logo">
+			<img src="./img/logo.png">
+		</div>
+		<div id="top">
+			로그인 | 회원가입 | <a href="intro.html">마이페이지</a> | 고객센터
+		</div>
+	</header>
+	<div class="clear"></div>
+	<nav id="topMenu">
+		<ul>
+			<li class="topMenuLi"><a href="disease.html"><img class="menuLink" src="./img/N1.PNG"></a>
+				<ul class="submenu">
+					<li class="submenuLink">감염병정보</li>
+					<li class="submenuLink">해외감염정보
+						<!--<ul>
+							<li>해외감염병NOW</li>
+							<li>예방접종정보</li>
+							<li>해외여행건강정보</li>
+							<li>검역관리</li>
+						</ul>-->
+					</li>
+					<li class="submenuLink">감염병유행정보</li>
+					<li class="submenuLink">결핵</li>
+					<li class="submenuLink">예방접종</li>
+					<li class="submenuLink">감염병간행물</li>
+				</ul>
+			</li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N2.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N3.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N4.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N5.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N6.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N7.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N8.PNG"></li>
+			<li class="topMenuLi"><img class="menuLink" src="./img/N9.PNG"></li>
+		</ul>
+	</nav>
+	<div class="clear"></div>
+	<section id="main">
+		<img src="./img/main.jpg" width="1650">
+	</section>
+	<aside>
+		<ul>
+			<li><img src="./img/A1.PNG" width="80"></li>
+			<li><img src="./img/A2.PNG" width="110"></li>
+			<li><img src="./img/A3.PNG" width="110"></li>
+			<li><img src="./img/A4.PNG" width="110"></li>
+		</ul>
+	</aside>
+	<section>
+		<ul id="sub1">
+			<li><img src="./img/P1.png"><br>건강한 2학기를 보내는 법<br>feat. 개학전 주의해야할 감염병</li>
+			<li><img src="./img/P2.png"><br>사람은 감염되지 않습니다,<br>아프리카 돼지열병 Q&amp;A</li>
+			<li><img src="./img/P3.png"><br>가을철 불청객,<br>알레르기비염</li>
+			<li><img src="./img/P4.png"><br>호기심이 많은 우리아이,<br>질식사고에 주의하세요!</li>
+		</ul>
+	</section>
+	<section>
+		<ul id="sub2">
+			<img src="./img/S0.PNG" width="300">
+			<li><img src="./img/S1.PNG"><br><br>국가별 질병정보</li>
+			<li><img src="./img/S2.PNG"><br><br>홍보자료</li>
+			<li><img src="./img/S3.PNG"><br><br>간행물·통계</li>
+			<li><img src="./img/S4.PNG"><br><br>조직도·직원찾기</li>
+			<li><img src="./img/S5.PNG"><br><br>법령·지침·서식</li>
+			<li><img src="./img/S6.PNG"><br><br>공고/공시</li>
+		</ul>
+	</section>
+	<section>
+		<ul id="sub3">
+			<li><img src="./img/G1.png"></li>
+			<li><img src="./img/G2.png"></li>
+			<li><img src="./img/G3.png"></li>
+			<li><img src="./img/G4.jpg"></li>
+		</ul>
+	</section>
+	<div class="clear"></div>
+	<footer>
+		<div id="F1">
+			<img src="./img/F1.png" width="500">
+		</div>
+		<div id="F2">
+			<img src="./img/F2.png" width="600">
+		</div>
+	</footer>
+</body>
+</html>
